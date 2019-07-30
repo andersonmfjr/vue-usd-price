@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <the-navbar />
-    <router-view />
+    <div class="router__container">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -30,14 +32,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+.router__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: $base-margin;
+  height: 100%;
+
+  div {
+    margin-left: $base-margin / 2;
+    margin-right: $base-margin / 2;
   }
 }
 </style>

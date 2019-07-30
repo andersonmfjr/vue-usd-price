@@ -1,12 +1,15 @@
 <template>
   <div>
-    Hello World Exchanges!
+    <awesome-page>{{ name }}</awesome-page>
   </div>
 </template>
 
 <script>
+import AwesomePageMixin from '@/mixins/awesome-page';
+
 export default {
   name: 'Exchanges',
+  mixins: [AwesomePageMixin],
 };
 </script>
 
