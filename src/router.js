@@ -15,6 +15,7 @@ const routes = [
     component: Buy,
     meta: {
       title: 'Buy - USD Best Price',
+      isInNavbar: true,
     },
   },
   {
@@ -23,6 +24,7 @@ const routes = [
     component: Compare,
     meta: {
       title: 'Compare - USD Best Price',
+      isInNavbar: true,
     },
   },
   {
@@ -31,6 +33,7 @@ const routes = [
     component: Remittance,
     meta: {
       title: 'Remittance - USD Best Price',
+      isInNavbar: true,
     },
   },
   {
@@ -39,6 +42,7 @@ const routes = [
     component: Exchanges,
     meta: {
       title: 'Exchanges - USD Best Price',
+      isInNavbar: true,
     },
   },
   {
@@ -47,6 +51,7 @@ const routes = [
     component: Fees,
     meta: {
       title: 'Fees - USD Best Price',
+      isInNavbar: true,
     },
   },
 ];
