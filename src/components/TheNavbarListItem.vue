@@ -14,6 +14,10 @@ li {
   display: inline;
   margin-right: $base-margin / 4;
 
+  &:last-of-type {
+    margin-right: $base-margin;
+  }
+
   a {
     text-decoration: none;
     color: $color-white;

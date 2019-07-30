@@ -41,7 +41,9 @@ button {
 .primary {
   background-color: transparent;
   color: $color-white;
-  border: 1px solid $color-white;
+  border: 2px solid $color-white;
+  padding-left: $base-padding * 2;
+  padding-right: $base-padding * 2;
   font-weight: bold;
 }
 
