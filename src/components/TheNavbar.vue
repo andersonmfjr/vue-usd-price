@@ -2,8 +2,14 @@
   <nav class="nav">
     <div class="nav__container">
       <logo />
-      <div>
+      <div class="nav__actions">
         <the-navbar-list />
+        <v-button
+          shape="primary"
+          size="md"
+        >
+          Login
+        </v-button>
       </div>
     </div>
   </nav>
@@ -12,19 +18,21 @@
 <script>
 import Logo from './Logo.vue';
 import TheNavbarList from './TheNavbarList.vue';
+import VButton from './VButton.vue';
 
 export default {
   name: 'TheNavbar',
   components: {
     Logo,
     TheNavbarList,
+    VButton,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-$navbar-height: 60px;
-$container-width: 880px;
+$navbar-height: 80px;
+$container-width: 920px;
 
 .nav {
   height: $navbar-height;
@@ -42,6 +50,11 @@ $container-width: 880px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
   }
 }
 </style>
