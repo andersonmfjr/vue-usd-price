@@ -1,0 +1,18 @@
+<template>
+  <div>
+    <awesome-page>{{ name }}</awesome-page>
+  </div>
+</template>
+
+<script>
+import AwesomePageMixin from '@/mixins/awesome-page';
+
+export default {
+  name: 'Fee',
+  mixins: [AwesomePageMixin],
+};
+</script>
+
+<style lang="scss" scoped>
+
+</style>
