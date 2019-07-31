@@ -7,7 +7,7 @@
     <p>
       <v-button
         shape="secondary"
-        size="lg"
+        size="xs"
       >
         Click on the exchange now
       </v-button>
@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .subheader__item {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: $color-dark-gray;
 }
 </style>

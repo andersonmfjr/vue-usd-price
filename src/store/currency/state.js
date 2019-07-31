@@ -3,6 +3,6 @@ export default {
   brl: 0,
   usd: 0,
   fetching: false,
-  fetchSucess: false,
+  fetchSuccess: false,
   fetchError: false,
 };
