@@ -19,7 +19,7 @@ export default {
     size: {
       type: String,
       required: true,
-      validator: value => ['md', 'lg'].indexOf(value) !== -1,
+      validator: value => ['md', 'xs'].indexOf(value) !== -1,
     },
   },
   computed: {
@@ -57,7 +57,7 @@ button {
   font-size: 1.6rem;
 }
 
-.lg {
-  font-size: 1.8rem;
+.xs {
+  font-size: 1.5rem;
 }
 </style>
