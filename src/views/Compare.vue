@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex';
 import TheHeader from '@/components/TheHeader.vue';
 import SubHeader from '@/components/SubHeader.vue';
 
@@ -14,6 +15,19 @@ export default {
   components: {
     TheHeader,
     SubHeader,
+  },
+  computed: mapState({
+    fetching: state => state.currency.fetching,
+    fetchSucess: state => state.currency.fetchSucess,
+    fetchError: state => state.currency.fetchError,
+  }),
+  async created() {
+    await this.fetchBID();
+  },
+  methods: {
+    ...mapActions({
+      fetchBID: 'currency/fetchBID',
+    }),
   },
 };
 </script>
