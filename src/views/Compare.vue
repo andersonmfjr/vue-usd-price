@@ -11,12 +11,12 @@
       class="inputs__container"
     >
       <v-input
-        currency="brl"
-        @value-changed="handleBRL"
-      />
-      <v-input
         currency="usd"
         @value-changed="handleUSD"
+      />
+      <v-input
+        currency="brl"
+        :disabled="true"
       />
     </div>
 
@@ -28,7 +28,7 @@
 
 <script>
 import { mapActions, mapState, mapMutations } from 'vuex';
-import { UPDATE_BRL, UPDATE_USD } from '@/store/currency/types';
+import { UPDATE_BRL } from '@/store/currency/types';
 import TheHeader from '@/components/TheHeader.vue';
 import SubHeader from '@/components/SubHeader.vue';
 import VInput from '@/components/VInput.vue';
@@ -58,11 +58,7 @@ export default {
     }),
     ...mapMutations({
       updateBRL: `currency/${UPDATE_BRL}`,
-      updateUSD: `currency/${UPDATE_USD}`,
     }),
-    handleBRL(value) {
-      this.updateUSD(value);
-    },
     handleUSD(value) {
       this.updateBRL(value);
     },
