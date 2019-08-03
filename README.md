@@ -1,6 +1,6 @@
 # USD Best Price
 
-## Simple vue.js to convert BRL to USD, and USD to BRL, considering data of <https://economia.awesomeapi.com.br> API.
+## Simple vue.js application to convert USD to BRL, considering data of <https://economia.awesomeapi.com.br> API.
 
 ## Organization
 

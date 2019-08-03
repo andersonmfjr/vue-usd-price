@@ -4,6 +4,7 @@
       v-model.lazy="price"
       v-money="money"
       class="input__content"
+      :disabled="disabled"
       @change="handleChange"
     >
     <div class="input__currency">
@@ -35,6 +36,11 @@ export default {
       required: false,
       default: 'brl',
       validator: value => ['brl', 'usd'].indexOf(value) !== -1,
+    },
+    disabled: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   data() {
@@ -90,6 +96,10 @@ $base-height: 50px;
     text-align: right;
     color: $color-dark-gray;
     font-weight: bold;
+
+    &:disabled {
+      background-color: transparent;
+    }
 
     &:focus {
       outline: none;
